@@ -15,7 +15,8 @@
 
 ## Description
 
-chkrootkit is a Puppet module that manages settings regarding users and user creation.
+chkrootkit is a Puppet module that manages chkrootkit, a daemon that checks for
+rootkits on Linux system.
 
 
 ### This is a SIMP module
