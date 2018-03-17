@@ -1,3 +1,6 @@
+* Sat Mar 17 2018 Trevor Vaughan <tvaughan@onyxpoint.com> - 0.0.3-0
+- Added OEL and Puppet 5 support
+
 * Thu Jul 06 2017 Liz Nemsick <lnemsick.simp@gmail.com> - 0.0.2-0
 - Remove OBE pe dependency in metadata.json
 
