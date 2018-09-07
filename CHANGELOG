@@ -1,3 +1,6 @@
+* Fri Sep 07 2018 Liz Nemsick <lnemsick.simp@gmail.com> - 0.0.3-0
+- Drop Heira 4 support
+
 * Sat Mar 17 2018 Trevor Vaughan <tvaughan@onyxpoint.com> - 0.0.3-0
 - Added OEL and Puppet 5 support
 
