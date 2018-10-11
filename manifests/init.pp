@@ -14,16 +14,19 @@
 #   Set to local6.notice, any other syslog destination to forward to syslog.
 #   Worthless if $syslog is false.
 #
+# @param package_ensure The ensure status of packages to be managed
+#
 # @author Trevor Vaughan <tvaughan@onyxpoint.com>
 #
 class chkrootkit (
-  Boolean $syslog  = lookup('simp_options::syslog', { 'default_value' => false }),
-  String $log_dest = 'local6.notice',
-  String $minute   = '0',
-  String $hour     = '0',
-  String $monthday = '*',
-  String $month    = '*',
-  String $weekday  = '0'
+  String  $log_dest = 'local6.notice',
+  String  $minute   = '0',
+  String  $hour     = '0',
+  String  $monthday = '*',
+  String  $month    = '*',
+  String  $weekday  = '0',
+  Boolean $syslog   = simplib::lookup('simp_options::syslog', { 'default_value' => false }),
+  String  $package_ensure = simplib::lookup('simp_options::package_ensure', { 'default_value' => 'installed' }),
 ) {
 
   if $syslog {
@@ -34,7 +37,7 @@ class chkrootkit (
   }
 
   package { 'chkrootkit':
-    ensure => 'latest'
+    ensure => $package_ensure
   }
 
   cron { 'chkrootkit':
