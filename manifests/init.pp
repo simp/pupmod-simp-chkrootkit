@@ -16,7 +16,7 @@
 #
 # @param package_ensure The ensure status of packages to be managed
 #
-# @author Trevor Vaughan <tvaughan@onyxpoint.com>
+# @author https://github.com/simp/pupmod-simp-chkrootkit/graphs/contributors
 #
 class chkrootkit (
   String  $log_dest = 'local6.notice',
