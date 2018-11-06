@@ -1,4 +1,8 @@
-[![License](http://img.shields.io/:license-apache-blue.svg)](http://www.apache.org/licenses/LICENSE-2.0.html) [![Build Status](https://travis-ci.org/simp/pupmod-simp-chkrootkit.svg)](https://travis-ci.org/simp/pupmod-simp-chkrootkit) [![SIMP compatibility](https://img.shields.io/badge/SIMP%20compatibility-6.0.*-orange.svg)](https://img.shields.io/badge/SIMP%20compatibility-6.0.*-orange.svg)
+[![License](http://img.shields.io/:license-apache-blue.svg)](http://www.apache.org/licenses/LICENSE-2.0.html)
+[![CII Best Practices](https://bestpractices.coreinfrastructure.org/projects/73/badge)](https://bestpractices.coreinfrastructure.org/projects/73)
+[![Puppet Forge](https://img.shields.io/puppetforge/v/simp/chkrootkit.svg)](https://forge.puppetlabs.com/simp/chkrootkit)
+[![Puppet Forge Downloads](https://img.shields.io/puppetforge/dt/simp/chkrootkit.svg)](https://forge.puppetlabs.com/simp/chkrootkit)
+[![Build Status](https://travis-ci.org/simp/pupmod-simp-chkrootkit.svg)](https://travis-ci.org/simp/pupmod-simp-chkrootkit)
 
 #### Table of Contents
 
@@ -21,7 +25,8 @@ rootkits on Linux system.
 
 ### This is a SIMP module
 
-This module is a component of the [System Integrity Management Platform](https://github.com/NationalSecurityAgency/SIMP), a compliance-management framework built on Puppet.
+This module is a component of the [System Integrity Management Platform](https://simp-project.com),
+a compliance-management framework built on Puppet.
 
 If you find any issues, they may be submitted to our [bug tracker](https://simp-project.atlassian.net/).
 
