@@ -1,6 +1,6 @@
 {
   "name": "simp-chkrootkit",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "author": "SIMP Team",
   "summary": "A SIMP puppet module for managing chkrootkit",
   "license": "Apache-2.0",
