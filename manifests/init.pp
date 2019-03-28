@@ -20,13 +20,13 @@
 #
 class chkrootkit (
   String  $log_dest = 'local6.notice',
-  String  $minute   = '0',
-  String  $hour     = '0',
-  String  $monthday = '*',
-  String  $month    = '*',
-  String  $weekday  = '0',
-  Boolean $syslog   = simplib::lookup('simp_options::syslog', { 'default_value' => false }),
-  String  $package_ensure = simplib::lookup('simp_options::package_ensure', { 'default_value' => 'installed' }),
+  Simplib::Cron::Minute   $minute         = '0',
+  Simplib::Cron::Hour     $hour           = '0',
+  Simplib::Cron::MonthDay $monthday       = '*',
+  Simplib::Cron::Month    $month          = '*',
+  Simplib::Cron::Weekday  $weekday        = '0',
+  Boolean                 $syslog         = simplib::lookup('simp_options::syslog', { 'default_value' => false }),
+  String                  $package_ensure = simplib::lookup('simp_options::package_ensure', { 'default_value' => 'installed' }),
 ) {
 
   if $syslog {
