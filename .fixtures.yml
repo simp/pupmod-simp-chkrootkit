@@ -4,6 +4,7 @@ fixtures:
     compliance_markup: https://github.com/simp/pupmod-simp-compliance_markup
     cron_core: https://github.com/puppetlabs/puppetlabs-cron_core
     stdlib: https://github.com/puppetlabs/puppetlabs-stdlib.git
+    simp_options: https://github.com/simp/pupmod-simp-simp_options
     simplib: https://github.com/simp/pupmod-simp-simplib.git
   symlinks:
     chkrootkit: "#{source_dir}"
