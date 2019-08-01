@@ -1,3 +1,6 @@
+* Fri Aug 02 2019 Robert Vincent <pillarsdotnet@gmail.com> - 0.2.1-0
+- Support puppetlabs/stdlib 6.x and puppet 6.x.
+
 * Mon Mar 25 2019 Joseph Sharkey <shark.bruhaha@gmail.com> - 0.2.0-0
 - Standardized cron datatypes to use the Simplib::Cron::### types.  This
   allows more flexibility in cron scheduling.
