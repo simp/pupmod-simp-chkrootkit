@@ -16,18 +16,21 @@ describe 'chkrootkit' do
         end
 
         context 'with syslog => true' do
-          let(:params) {{
-            :syslog   => true,
-            :log_dest => 'random string that is hard to validate'
-          }}
+          let(:params) do
+            {
+              syslog: true,
+           log_dest: 'random string that is hard to validate'
+            }
+          end
+
           it { is_expected.to create_cron('chkrootkit').with_command('/usr/sbin/chkrootkit -n | /bin/logger -p random string that is hard to validate -t chkrootkit') }
         end
 
         context 'with destination set to cron' do
-          let(:params) {{ :log_dest => 'cron' }}
+          let(:params) { { log_dest: 'cron' } }
+
           it { is_expected.to create_cron('chkrootkit').with_command('/usr/sbin/chkrootkit -n') }
         end
-
       end
     end
   end
